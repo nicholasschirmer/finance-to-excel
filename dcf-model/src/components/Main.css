@@ -1,3 +1,17 @@
-table, th, td{
-    border: 1px solid black;
+table{
+  width: 100%;
+  text-align: center;  
+}
+
+input{
+    width: 5vw;
+}
+
+.mt-dark{
+    background: whitesmoke;
+    color: rgb(36, 37, 37);
+}
+
+#stockCode{
+
 }

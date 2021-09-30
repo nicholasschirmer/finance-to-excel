@@ -16,12 +16,12 @@ def defualt():
 @app.route('/income_statement/<stock_code>')
 def inc_state(stock_code):
     curr_income_Statement = requests.get("https://financialmodelingprep.com/api/v3/income-statement/" + stock_code +"?limit=120&apikey=26c190fa8aa7da788a4fdd3132fd386a")
-    return jsonify(curr_income_Statement.text)
+    return curr_income_Statement.text
 
 @app.route('/ballance_sheet/<stock_code>')
 def bal_sheet(stock_code):
     curr_ballance_sheet = requests.get("https://financialmodelingprep.com/api/v3/balance-sheet-statement/" + stock_code +"?limit=120&apikey=26c190fa8aa7da788a4fdd3132fd386a")
-    return jsonify(curr_ballance_sheet.text)
+    return curr_ballance_sheet.text
 
 @app.route('/cash_flow/<stock_code>')
 def cash_flow(stock_code):
