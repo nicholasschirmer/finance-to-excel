@@ -1,17 +1,44 @@
-table{
+table {
   width: 100%;
-  text-align: center;  
+  text-align: center;
 }
 
-input{
-    width: 5vw;
+input {
+  width: 5vw;
 }
 
-.mt-dark{
-    background: whitesmoke;
-    color: rgb(36, 37, 37);
+.heading {
+  margin: 5px;
+  text-align: center;
+  color: white;
 }
 
-#stockCode{
+.mt-dark {
+  background: #333333 !important;
+  color: rgb(202, 224, 224) !important;
+}
 
+#stockCode {
+  width: 271px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.stockTicker {
+  background-color: #1e1f1f;
+  color: #f9f9f5;
+}
+
+.Paper {
+  position: absolute;
+  top: 0 !important;
+  background-color: #1e1f1f !important;
+  height: 100vh;
+  width: 100vw;
+}
+
+.valuationInput {
+  color: white !important;
+  background-color: #d0cfcf;
 }
